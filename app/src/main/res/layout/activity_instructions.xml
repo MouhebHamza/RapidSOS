@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InstructionsActvity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="397dp"
+        android:layout_height="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Instructions"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="336dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="Register your emergency contact numbers under MENU>REGISTER NUMBER"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="336dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="Press the SOS Widget or the SOS Button on the homepage in case of an Emergency.On pressing the button,an SOS message along with the link of your CURRENT LOCATION on google maps will be sent as an SMS to the registered numbers"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="30sp"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="336dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="We recommend you to always keep your GPS turned ON so that your device has enough information about your location in case of an emergency which in turn enables the app to fetch your location very quickly otherwise it may take few more seconds (not more than 10 sec"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="30sp"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="We recommnend you to use SOS Alert Widget and always keep your GPS turned ON so that you can send SOS Alerts in just one tap.You can adjust the size of the widget as per your requirements."
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView4"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="30sp"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="SMS service charges will be applied by your service provider."
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView5"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="30sp"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:text="Sufficient balance is required in mobile to work this application."
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/imageView6"
+            android:layout_width="53dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="30sp"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/instructions"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ff0038"
+        android:text="Proceed" />
+
+</LinearLayout>
+
+
+
+

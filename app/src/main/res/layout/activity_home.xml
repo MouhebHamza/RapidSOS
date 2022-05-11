@@ -1,0 +1,359 @@
+²<?xml version="1.0" encoding="utf-8"?>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="#C66476"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/shape"-->
+<!--        />-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+
+<!--        >-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/dangerCard"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            app:cardBackgroundColor="#fff"-->
+<!--            app:cardCornerRadius="50dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="88dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="75dp"-->
+<!--                    android:layout_height="75dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/danger" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/dangerClick"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="danger"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#de3163"-->
+<!--                    android:textSize="18dp" />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+
+<!--            android:id="@+id/medicalView"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginBottom="256dp"-->
+<!--            app:cardBackgroundColor="#fff"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            app:cardCornerRadius="50dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.51"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="88dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="75dp"-->
+<!--                    android:layout_height="75dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:src="@drawable/medical" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="emergency"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#de3163"-->
+<!--                    android:textSize="18dp" />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/sosCard"-->
+
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginLeft="120dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        app:cardBackgroundColor="#fff"-->
+<!--        app:cardCornerRadius="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="88dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="75dp"-->
+<!--                android:layout_height="75dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/rapid" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:textColor="#de3163"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Rapid SOS"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="18dp" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/setupBTN"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="Setup"-->
+<!--        android:backgroundTint="@color/teal_200"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="25dp"-->
+<!--        />-->
+<!--</LinearLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+<!--    <RelativeLayout  android:layout_marginHorizontal="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layoutDirection="ltr">-->
+
+<!--        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/frame_sos">-->
+<!--            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">-->
+<!--                <FrameLayout android:id="@+id/frame_loyal_call1" android:background="@color/black" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1.5">-->
+<!--                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/call_white"/>-->
+<!--                </FrameLayout>-->
+<!--                <TextView android:textStyle="bold" android:textColorHint="#757575" android:gravity="center" android:id="@+id/tLoyel1" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:hint="trustee 1" android:layout_weight="6"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">-->
+<!--                <FrameLayout android:id="@+id/frame_loyal_call2" android:background="@color/black" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1.5">-->
+<!--                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/call_white"/>-->
+<!--                </FrameLayout>-->
+<!--                <TextView android:textStyle="bold" android:textColorHint="#757575" android:gravity="center" android:id="@+id/tLoyel2" android:background="@color/white" android:layout_width="0dp" android:layout_height="35dp" android:hint="trustee 2" android:layout_weight="6"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">-->
+<!--                <FrameLayout android:id="@+id/frame_loyal_call3" android:background="@color/black" android:layout_width="0dp" android:layout_height="35dp" android:layout_weight="1.5">-->
+<!--                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:src="@drawable/call_white"/>-->
+<!--                </FrameLayout>-->
+<!--                <TextView android:textStyle="bold" android:textColorHint="#757575" android:gravity="center" android:id="@+id/tLoyel3" android:background="@color/white" android:layout_width="0dp" android:layout_height="35dp" android:hint="trustee 3" android:layout_weight="6"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout   android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/HeartAttack">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/round_btn_shadow" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/heartattack_icon_w"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Heart Attack"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Kidnap">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/kidnap2" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kidnap"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Attack">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/attack_icon_w"
+                    app:tint="@color/black" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Attack"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Convulsion">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/convulsion" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Convulsion"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Accident">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/accident" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Accident"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/Hypertension">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/hypertention" />
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hypertension"/>
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+<!--        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">-->
+<!--                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>-->
+<!--                <ImageView  android:layout_width="70dp" android:layout_height="60dp" android:src="@drawable/ic_police_black" android:layout_centerInParent="true"/>-->
+<!--            </RelativeLayout>-->
+<!--            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Natural disaster"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">-->
+<!--                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>-->
+<!--                <ImageView  android:layout_width="70dp" android:layout_height="60dp" android:src="@drawable/ic_police_black" android:layout_centerInParent="true"/>-->
+<!--            </RelativeLayout>-->
+<!--            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="I Lost"/>-->
+<!--        </LinearLayout>-->
+<!--        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">-->
+<!--            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">-->
+<!--                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/general_icon" />-->
+<!--            </RelativeLayout>-->
+<!--            <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="General"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+    <FrameLayout
+        android:id="@+id/frame_sos"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+
+        android:background="@drawable/sos_launcher" />
+
+    <RelativeLayout android:id="@+id/rapidCall" android:layout_width="match_parent" android:layout_marginTop="0dp" android:layout_height="wrap_content" >
+
+        <FrameLayout android:background="@drawable/black_round_box" android:padding="30dp" android:layout_width="match_parent" android:layout_height="60dp"  android:layout_centerInParent="true" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:id="@+id/edt_general_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_toStartOf="@+id/img_alert"
+            android:background="@null"
+            android:hint="           Quick Call"
+            android:inputType="text"
+            android:maxHeight="50dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/alert" />
+    </RelativeLayout>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/settings"
+                android:src="@drawable/settings_logo"
+                android:layout_marginStart="150dp"
+                />
+
+
+
+
+
+</LinearLayout>

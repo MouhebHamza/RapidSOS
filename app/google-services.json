@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "563435078011",
+    "firebase_url": "https://rapidsosapp-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rapidsosapp",
+    "storage_bucket": "rapidsosapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563435078011:android:3b0f77714d19211431bdde",
+        "android_client_info": {
+          "package_name": "com.epi.rapidsosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563435078011-6a8r1uhorh5l6dhdkg9ph13hpmruv24l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epi.rapidsosapp",
+            "certificate_hash": "04c53513a0197ad6b9129b68f985bb4e018ca360"
+          }
+        },
+        {
+          "client_id": "563435078011-mlaksajn61svtolfc45i79as1apgt10v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGOBW3pu2EfduOtHjYd9uLq87Wn9zA10o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563435078011-mlaksajn61svtolfc45i79as1apgt10v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

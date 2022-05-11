@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/bg"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".AddNumberActivity">-->
+
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#f61f31"-->
+<!--        android:padding="16dp">-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/backIcon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ImageView-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:background="#f61f31"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_back_to"-->
+<!--                app:tint="@color/white" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_toEndOf="@+id/backIcon"-->
+<!--            android:text="Add New Number"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25sp" />-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/pickBTN"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="35dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:background="#f61f31"-->
+
+<!--                android:src="@drawable/numberpickers"-->
+<!--                app:tint="@color/white" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </RelativeLayout>-->
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="Register"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:textSize="40dp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Text2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="(you can register unlimited members)"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textStyle="bold"-->
+<!--         />-->
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/emailContainer"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        app:helperText="required"-->
+<!--        app:helperTextTextColor="@android:color/holo_red_dark"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--       >-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/nameTF"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:lines="1"-->
+<!--            android:inputType="text"-->
+<!--            android:hint="name"/>-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/phoneContainer"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        app:helperText="required"-->
+<!--        app:helperTextTextColor="@android:color/holo_red_dark"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:counterEnabled="true"-->
+<!--        app:counterMaxLength="10"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        >-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/phoneTF"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:lines="1"-->
+<!--            android:inputType="number"-->
+<!--            android:hint="phone_number"/>-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/submitButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="44dp"-->
+<!--        android:backgroundTint="@color/teal_200"-->
+<!--        android:text="submit"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        />-->
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddNumberActivity">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f61f31"
+            android:padding="16dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/backIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#f61f31"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back_to"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/backIcon"
+                android:text="Add New Number"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pickBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#f61f31"
+
+                    android:src="@drawable/numberpickers"
+                    app:tint="@color/white" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/rTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="150dp"
+            android:text="Register"
+            android:textColor="#f61f31"
+            android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:text="(you can register unlimited members)"
+        android:textColor="#f61f31"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameCT"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:counterEnabled="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:counterMaxLength="16"
+        app:helperText="@string/required"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editext_border_red"
+            android:hint="Name"
+            android:inputType="text"
+
+            android:lines="1"
+            android:maxLength="16" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneCT"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        app:counterEnabled="true"
+
+        app:counterMaxLength="8"
+        app:helperText="@string/required"
+
+        app:helperTextTextColor="@android:color/holo_red_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/editext_border_red"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:lines="1" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rect_round_red_cal"
+        android:gravity="center"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp"
+        android:text="Register Now "
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
