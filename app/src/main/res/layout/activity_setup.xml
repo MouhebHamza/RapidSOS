@@ -48,22 +48,7 @@
 
 
     </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
-        <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:gravity="center"
-                android:text="my_personal_information"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-        </RelativeLayout>
-
-
-    </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp" >
         <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:id="@+id/Instructions">
             <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
@@ -82,7 +67,7 @@
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
         <RelativeLayout android:id="@+id/RegisterN" android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/add_contact" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -98,7 +83,7 @@
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
         <RelativeLayout android:id="@+id/ViewRegistred" android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/contacts" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -114,7 +99,7 @@
     </LinearLayout>
     <LinearLayout  android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
         <RelativeLayout android:id="@+id/EditSOSMessage" android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/message_icon" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -130,14 +115,46 @@
     </LinearLayout>
     <LinearLayout android:id="@+id/ManageTrustee" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
         <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
-            <ImageView  android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/personal_info" android:scaleType="fitXY" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rate_us" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:gravity="center"
-                android:text="M"
+                android:text="Rate US"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
+        <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/share_sos" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="Share"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
         </RelativeLayout>

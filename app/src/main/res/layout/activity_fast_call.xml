@@ -374,8 +374,9 @@
             android:layout_marginTop="5dp"
             android:background="@color/white"
             android:gravity="center"
+
             android:padding="5dp"
-            android:text="Name asking for help"
+            android:text="Choose someone for help"
             android:textSize="15.5sp" />
 
         <FrameLayout

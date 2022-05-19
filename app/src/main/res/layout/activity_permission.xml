@@ -9,28 +9,35 @@
 
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@color/red"
+            >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Permissions"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    />
 
-        <Button
-            android:id="@+id/button2"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="240dp"
-            android:layout_height="60dp"
-            android:text="SMS permission"
-            android:layout_marginTop="150dp"
-            android:layout_marginStart="100dp"
-            android:textColor="@color/red"
-            android:textSize="12sp"
 
-            app:strokeColor="@color/red" />
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/button1"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="240dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="100dp"
             android:text="Activate location"
+            android:layout_marginHorizontal="50dp"
             android:textColor="@color/red"
             android:textSize="12sp"
 
@@ -38,13 +45,25 @@
         <Button
             android:id="@+id/button3"
             style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="240dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginHorizontal="50dp"
             android:text="PHONE PERMISSION"
             android:textColor="@color/red"
             android:textSize="12sp"
+            app:strokeColor="@color/red" />
+        <Button
+            android:id="@+id/button2"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SMS permission"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+
             app:strokeColor="@color/red" />
 
         <CheckBox
@@ -52,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="80dp"
             android:text="   I agree to the terms of service"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -70,6 +89,7 @@
             android:layout_gravity="center_horizontal"
             android:backgroundTint="@color/red"
             android:text="Submit"
+
             android:layout_marginTop="50dp"
              />
     </LinearLayout>
