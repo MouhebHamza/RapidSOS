@@ -20,6 +20,7 @@
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/drawable/ic_view.xml" value="0.197" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/drawable/icon_auto_mirrored.xml" value="0.178" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/drawable/rect_round_red_cal.xml" value="0.178" />
+        <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/drawable/shape_background.xml" value="0.183" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_add_number.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_custom_message.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_fast_call.xml" value="0.25" />
@@ -31,9 +32,12 @@
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_setup.xml" value="0.264" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_timer.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/activity_view_registred_numbers.xml" value="0.25" />
+        <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/add_item.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/dialog_confirmation.xml" value="0.25" />
+        <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/list_item.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/list_row.xml" value="0.25" />
         <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/layout/toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/mouhe/AndroidStudioProjects/RapidSOSAPP/app/src/main/res/menu/show_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -239,7 +239,8 @@ class MainActivity : AppCompatActivity() {
         database.child("phones").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 for (data in dataSnapshot.children) {
-                    val singlePhone= data.key
+                    val userNumbers = data.getValue(Phone::class.java)
+                    val singlePhone =userNumbers?.number
                     allNumbers.add(singlePhone.toString())
                 }
             }
@@ -248,6 +249,7 @@ class MainActivity : AppCompatActivity() {
                 Log.d("taggg", "loadPost:onCancelled", databaseError.toException())
             }
         })
+
     }
     private fun fetchLocation()  {
         val task = fusedLocationProviderClient.lastLocation

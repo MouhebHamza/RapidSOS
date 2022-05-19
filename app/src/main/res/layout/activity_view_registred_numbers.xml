@@ -1,19 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ViewRegisteredNumbersActivity">
     <RelativeLayout
-        android:id="@+id/header"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ViewRegisteredNumbersActivity">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_below="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f61f31"
+        android:padding="16dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#f61f31"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back_to"
+                app:tint="@color/white" />
+        </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/backIcon"
+            android:text="View Registred Numbers"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecycler"
+                android:layout_width="match_parent"
+                android:layout_marginTop="80dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>

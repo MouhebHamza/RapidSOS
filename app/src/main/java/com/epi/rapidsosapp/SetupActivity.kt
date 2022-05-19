@@ -28,7 +28,7 @@ class SetupActivity : AppCompatActivity() {
         }
         val viewPhone = findViewById<RelativeLayout>(R.id.ViewRegistred)
         viewPhone.setOnClickListener(){
-            //startActivity(Intent(this, ViewRegisteredNumbersActivity::class.java))
+            startActivity(Intent(this, ViewRegisteredNumbersActivity::class.java))
 
 
         }
