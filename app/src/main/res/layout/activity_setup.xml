@@ -113,8 +113,8 @@
 
 
     </LinearLayout>
-    <LinearLayout android:id="@+id/ManageTrustee" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
-        <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:id="@+id/rateUs" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
+        <RelativeLayout android:id="@+id/rateUS" android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
 
             <ImageView
                 android:layout_width="48dp"
@@ -138,7 +138,7 @@
 
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="20dp"  android:layout_marginEnd="20dp">
-        <RelativeLayout  android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <RelativeLayout  android:id="@+id/shareIT" android:background="@drawable/icon_auto_mirrored" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
 
             <ImageView
                 android:layout_width="48dp"

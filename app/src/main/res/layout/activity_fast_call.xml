@@ -303,7 +303,7 @@
         android:layout_marginTop="50dp"
         >
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
-            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+            <RelativeLayout android:id="@+id/CGCALL" android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
                 <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
 
                 <ImageView
@@ -315,7 +315,7 @@
             <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="coast guard"/>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
-            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+            <RelativeLayout android:id="@+id/NGCALL" android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
                 <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
 
                 <ImageView
@@ -327,7 +327,7 @@
             <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="national guard"/>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
-            <RelativeLayout android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
+            <RelativeLayout android:id="@+id/RVCALL" android:layout_gravity="center" android:layout_width="90dp" android:layout_height="90dp">
                 <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/round_btn_shadow"/>
 
                 <ImageView

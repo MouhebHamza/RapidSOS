@@ -30,7 +30,7 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="336dp"
+            android:layout_width="300dp"
             android:layout_height="52dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
@@ -62,7 +62,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="336dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
@@ -92,7 +92,7 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="336dp"
+            android:layout_width="300dp"
             android:layout_height="104dp"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
@@ -122,11 +122,11 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="336dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
-            android:text="We recommnend you to use SOS Alert Widget and always keep your GPS turned ON so that you can send SOS Alerts in just one tap.You can adjust the size of the widget as per your requirements."
+            android:text="We recommnend you to use SOS Alert Widget and always keep your GPS turned ON so that you can send SOS Alerts in just one tap."
             android:textColor="@color/black"
             android:textStyle="normal"
             app:layout_constraintStart_toEndOf="@+id/imageView1"
@@ -152,7 +152,7 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="336dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
@@ -182,7 +182,7 @@
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="336dp"
+            android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="16dp"
@@ -208,7 +208,7 @@
     <Button
         android:id="@+id/instructions"
         android:layout_width="360dp"
-        android:layout_height="match_parent"
+        android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="16dp"

@@ -1,13 +1,14 @@
 package com.epi.rapidsosapp
 
 import android.app.Activity
-import android.app.AlertDialog
 import android.content.Intent
 import android.database.Cursor
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.provider.ContactsContract
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -45,6 +46,8 @@ class AddNumberActivity : AppCompatActivity() {
                 uuid = profile.uid
             }
         }
+
+
         submitButton.setOnClickListener() {
 
             val phoneNumber = phoneET.text.toString()
@@ -121,6 +124,7 @@ class AddNumberActivity : AppCompatActivity() {
     }
     private fun submitForm()
     {
+        val submitButton = findViewById<TextView>(R.id.btn_submit)
         val nameCT = findViewById<TextInputLayout>(R.id.nameCT)
         val phoneCT = findViewById<TextInputLayout>(R.id.phoneCT)
         val nameET = findViewById<TextInputEditText>(R.id.nameET)
@@ -131,10 +135,18 @@ class AddNumberActivity : AppCompatActivity() {
         val validName = nameCT.helperText == null
         val validPhone = phoneCT.helperText == null
 
-        if ( validName && validPhone)
+        if ( validName && validPhone){
             resetForm()
-        else
+            submitButton.isEnabled = false
+
+        }
+
+        else{
             invalidForm()
+
+
+        }
+
     }
 
     private fun invalidForm()
@@ -145,17 +157,11 @@ class AddNumberActivity : AppCompatActivity() {
         val phoneET = findViewById<TextInputEditText>(R.id.phoneET)
         var message = ""
         if(nameCT.helperText != null)
-            message += "\n\nPassword: " + nameCT.helperText
+            message += "\n\nName: " + nameCT.helperText
         if(phoneCT.helperText != null)
             message += "\n\nPhone: " + phoneCT.helperText
 
-        AlertDialog.Builder(this)
-            .setTitle("Invalid Form")
-            .setMessage(message)
-            .setPositiveButton("Okay"){ _,_ ->
-                // do nothing
-            }
-            .show()
+
     }
 
     private fun resetForm()
@@ -164,18 +170,9 @@ class AddNumberActivity : AppCompatActivity() {
         val phoneCT = findViewById<TextInputLayout>(R.id.phoneCT)
         val nameET = findViewById<TextInputEditText>(R.id.nameET)
         val phoneET = findViewById<TextInputEditText>(R.id.phoneET)
-        var message = "\nPassword: " + nameET.text
+        var message = "\nName: " + nameET.text
         message += "\nPhone: " + phoneET.text
-        AlertDialog.Builder(this)
-            .setTitle("Form submitted")
-            .setMessage(message)
-            .setPositiveButton("Okay"){ _,_ ->
-                nameET.text = null
-                phoneET.text = null
-                nameCT.helperText = getString(R.string.required)
-                phoneCT.helperText = getString(R.string.required)
-            }
-            .show()
+
     }
 
 
@@ -202,7 +199,7 @@ class AddNumberActivity : AppCompatActivity() {
         val passwordText = nameET.text.toString()
         if(passwordText.length < 3)
         {
-            return "Minimum 8 Character Password"
+            return "Minimum  Character Name"
         }
 
 

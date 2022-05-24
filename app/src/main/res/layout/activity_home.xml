@@ -310,7 +310,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
 
-        android:background="@drawable/sos_launcher" />
+        android:background="@drawable/sos_logo" />
 
     <RelativeLayout android:id="@+id/rapidCall" android:layout_width="match_parent" android:layout_marginTop="0dp" android:layout_height="wrap_content" >
 

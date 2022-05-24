@@ -1,11 +1,13 @@
 package com.epi.rapidsosapp
 
 import android.Manifest
+import android.app.Dialog
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.location.Address
 import android.location.Geocoder
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -74,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             Handler().postDelayed({
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "${message} \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+                    sendSMS("${numberToSend}", "${message} \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
                 }
 
@@ -110,103 +112,204 @@ class MainActivity : AppCompatActivity() {
 
         val heartAttack= findViewById<LinearLayout>(R.id.HeartAttack)
         heartAttack.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-            Handler().postDelayed({
-                val iterator = allNumbers.listIterator()
-                for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "HEART ATTACK ALERTT!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
-                }
 
-            }, 5000)
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
+                Handler().postDelayed({
+
+                    val iterator = allNumbers.listIterator()
+                    for (numberToSend in iterator) {
+                        sendSMS("${numberToSend}", "HEART ATTACK ALERTT!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+
+                    }
+                }, 5000)
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+
+
+
+
         }
         val Accident= findViewById<LinearLayout>(R.id.Accident)
         Accident.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-                val iterator = allNumbers.listIterator()
-                for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "ACCIDENT ALERTT!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
-                }
+
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
+                Handler().postDelayed({
+
+                    val iterator = allNumbers.listIterator()
+                    for (numberToSend in iterator) {
+                        sendSMS("${numberToSend}", "ACCIDENT ALERTT!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+
+                    }
+                }, 5000)
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+
+
+
 
         }
         val Hypertension= findViewById<LinearLayout>(R.id.Hypertension)
         Hypertension.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
+
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "Hypertension ALERTT!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+                    sendSMS("${numberToSend}", "Hypertension ALERTT!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
                 }
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+
+
+
+
+
+
 
         }
         val Convulsion= findViewById<LinearLayout>(R.id.Convulsion)
         Convulsion.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-            Handler().postDelayed({
+
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "PLEASE HELP MEE \n" +
-                            " Convulsion ALERTT!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+                    sendSMS("${numberToSend}", "PLEASE HELP MEE \n \n " +
+                            " Convulsion ALERTT!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
                 }
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
 
-            }, 5000)
+
+
         }
         val Kidnap= findViewById<LinearLayout>(R.id.Kidnap)
         Kidnap.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-            Handler().postDelayed({
+
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "Kidnap ALERTT!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+                    sendSMS("${numberToSend}", "Kidnap ALERTT!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
                 }
 
-            }, 5000)
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
+
+
         }
 
         val Attack= findViewById<LinearLayout>(R.id.Attack)
+
         Attack.setOnClickListener(){
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-            Handler().postDelayed({
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
-                    sendSMS("${numberToSend}", "I'm UNDER ATTACK!! \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  ")
+                    sendSMS("${numberToSend}", "I'm UNDER ATTACK!! \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  ")
 
                 }
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
 
-            }, 5000)
+
+
+
         }
 
         val fastSMS= findViewById<FrameLayout>(R.id.frame_sos)
         fastSMS.setOnClickListener() {
-            fetchLocation()
-            fetchMessage()
-            fetchNumbers()
-            Handler().postDelayed({
+
+            val dialog = Dialog(this, R.style.Dialog)
+            dialog.setContentView(R.layout.dialog_confirmation)
+            dialog.findViewById<View>(R.id.yesBTN).setOnClickListener {
+                dialog.dismiss()
+
+                fetchLocation()
+                fetchMessage()
+                fetchNumbers()
                 val iterator = allNumbers.listIterator()
                 for (numberToSend in iterator) {
                     sendSMS(
                         "${numberToSend}",
-                        "${message} \n Please reach ASAP to the bellow location \n https://maps.google.com/maps?q=loc:${myPosition}  "
+                        "${message} \n \n Please reach ASAP to the bellow location \n \n https://maps.google.com/maps?q=loc:${myPosition}  "
                     )
 
                 }
+            }
+            dialog.findViewById<View>(R.id.noBTN).setOnClickListener {
+                dialog.dismiss()
+            }
+            dialog.show()
 
-            }, 5000)
+
 
 
         }
@@ -253,24 +356,20 @@ class MainActivity : AppCompatActivity() {
     }
     private fun fetchLocation()  {
         val task = fusedLocationProviderClient.lastLocation
+        Log.d("taggg", "1")
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
             ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),101)
+            Log.d("taggg", "333")
 
 
         }
 
         task.addOnSuccessListener {
+            Log.d("taggg", "2")
+
             if(it !=null){
-                val geocoder: Geocoder
-                var addresses: List<Address?>
-                geocoder = Geocoder(this, Locale.getDefault())
-                addresses = geocoder.getFromLocation(
-                    it.latitude,
-                    it.longitude,
-                    1
-                )
 
                 val lat= it.latitude
                 val long = it.longitude
@@ -278,6 +377,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG).show()
                 myPosition="${lat},${long}"
                 Log.d("poss",myPosition)
+                Log.d("taggg", "2")
 
             }
 
